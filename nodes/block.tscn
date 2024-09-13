@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0ptgikt2blun"]
+
+[ext_resource type="Texture2D" uid="uid://dbitwuxyx0c71" path="res://assets/element_grey_square.png" id="1_kvokv"]
+[ext_resource type="Script" path="res://nodes/block.gd" id="1_rpydo"]
+
+[node name="Block" type="Node2D" groups=["blocks"]]
+script = ExtResource("1_rpydo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture = ExtResource("1_kvokv")

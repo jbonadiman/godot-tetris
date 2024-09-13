@@ -1,0 +1,17 @@
+[gd_scene load_steps=6 format=3 uid="uid://bviq20coybysb"]
+
+[ext_resource type="Script" path="res://spawners/shape_spawner.gd" id="1_f1vsq"]
+[ext_resource type="Script" path="res://resources/shape_recipe.gd" id="2_4mqjo"]
+[ext_resource type="Resource" uid="uid://dtj82khrspjn5" path="res://resources/L.tres" id="3_qk30d"]
+[ext_resource type="Resource" uid="uid://rq8ovcerbx7x" path="res://resources/Square.tres" id="4_n5n8y"]
+[ext_resource type="PackedScene" uid="uid://b5onfxr38dn83" path="res://nodes/t_shape.tscn" id="5_gct4i"]
+
+[node name="ShapeSpawner" type="Node"]
+script = ExtResource("1_f1vsq")
+shapes = Array[ExtResource("2_4mqjo")]([ExtResource("3_qk30d"), ExtResource("4_n5n8y")])
+shape_scene = ExtResource("5_gct4i")
+
+[node name="SpawnTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+one_shot = true
+autostart = true

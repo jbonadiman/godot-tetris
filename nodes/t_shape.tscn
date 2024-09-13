@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5onfxr38dn83"]
+
+[ext_resource type="Script" path="res://nodes/t_shape.gd" id="1_2ye5u"]
+[ext_resource type="PackedScene" uid="uid://c0ptgikt2blun" path="res://nodes/block.tscn" id="1_ptuw8"]
+
+[node name="TShape" type="Node2D" groups=["shapes"]]
+script = ExtResource("1_2ye5u")
+block_scene = ExtResource("1_ptuw8")

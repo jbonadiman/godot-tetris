@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ShapeRecipe" load_steps=2 format=3 uid="uid://rq8ovcerbx7x"]
+
+[ext_resource type="Script" path="res://resources/shape_recipe.gd" id="1_jnoq5"]
+
+[resource]
+script = ExtResource("1_jnoq5")
+shape = "XX 
+XX "

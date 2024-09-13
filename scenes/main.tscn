@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dodainla6yl4b"]
+
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_8yvle"]
+[ext_resource type="PackedScene" uid="uid://bviq20coybysb" path="res://spawners/shape_spawner.tscn" id="2_i582p"]
+
+[node name="Main" type="Node2D" groups=["current_scene"]]
+script = ExtResource("1_8yvle")
+
+[node name="FallTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.5
+autostart = true
+
+[node name="ShapeSpawner" parent="." instance=ExtResource("2_i582p")]
