@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0ptgikt2blun"]
+
+[ext_resource type="Texture2D" uid="uid://dbitwuxyx0c71" path="res://assets/element_grey_square.png" id="2_wg7ix"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mh1dd"]
+size = Vector2(36, 36)
+
+[node name="Jewel" type="Node2D" groups=["jewels"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture = ExtResource("2_wg7ix")
+
+[node name="Area2D" type="Area2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_mh1dd")

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5onfxr38dn83"]
+
+[ext_resource type="Script" path="res://nodes/column.gd" id="1_2ye5u"]
+[ext_resource type="PackedScene" uid="uid://c0ptgikt2blun" path="res://nodes/jewel.tscn" id="1_ptuw8"]
+
+[node name="Column" type="Node2D"]
+script = ExtResource("1_2ye5u")
+jewel_scene = ExtResource("1_ptuw8")
